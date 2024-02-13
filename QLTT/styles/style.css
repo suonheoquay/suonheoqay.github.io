@@ -1,0 +1,109 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Header */
+#logo {
+    display: inline;
+    height: 30px;
+}
+
+#ten-nhom {
+    display: inline;
+    margin-bottom: px;
+}
+/* menu bar */
+
+nav {
+    border: 1px solid;
+    background-color: black;
+}
+
+.menu li {
+    display: inline;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.menu-item a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.menu-item:hover > .sub-menu {
+    display: block;
+}
+/* sub-menu */
+.sub-menu{
+    display: none;
+    position: absolute;
+    padding: 10px 0;
+}
+
+.sub-menu li {
+    display: block;
+}
+
+.sub-menu li:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+
+search {
+    float: right;
+    display: inline;
+}
+
+search * {
+    height: 30px;
+}
+
+search input {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+button {
+    margin-left: 0px;
+}
+
+/* Main content and aside */
+main {
+    min-height: 300px;
+}
+
+.anh-dai-dien {
+    height: 500px;
+}
+
+.anh-va-lien-he {
+    float: left;
+}
+
+aside {
+    display: none;
+    float: right;
+    width: 100px;
+    height: 200px;
+    border: thick inset #0089be;
+    margin: 10px;
+}
+
+/* footer */
+
+footer {
+    clear: both;
+    display: grid;
+    background-color: black;
+    min-height: 200px;
+}
+
+footer p {
+    display: block;
+    margin: auto;
+    color: white;
+}
