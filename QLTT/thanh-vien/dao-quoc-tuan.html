@@ -1,67 +1,88 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Nhóm QLTT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="..">
-    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Trang web của nhóm QLTT</title>
 </head>
 
 <body>
-    <div id="page">
-        <header>
-            <a href="" style="font-size: 0px;">
-                <img id="logo" src="images/logo-nhom.png" alt="Logo của nhóm QLTT">
-            </a>
-            <h1 id="ten-nhom">
-                QLTT
-            </h1>
-            <search>
-                <input type="search">
-                <button type="submit">Tìm kiếm</button>
-            </search>
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a href="thanh-vien/">Thành viên</a>
-                        <ul class="sub-menu" id="cac-thanh-vien">
-                            <li><a href="thanh-vien/dao-quoc-tuan.html">Đào Quốc Tuấn</a></li>
-                            <li><a href="thanh-vien/nguyen-trong-tuan.html">Nguyễn Trọng Tuấn</a></li>
-                            <li><a href="thanh-vien/nguyen-hoang-lam.html">Nguyễn Hoàng Lâm</a></li>
-                            <li><a href="thanh-vien/nguyen-minh-quang.html">Nguyễn Minh Quang</a></li>
+    <nav class="navbar navbar-expand-md border border-light-subtle">
+        <div class="container-fluid">
+            <a class="nav-brand" href="#"><img src="images/logo-nhom.png" height="30"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Thành viên
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="thanh-vien/dao-quoc-tuan.html">Đào Quốc Tuấn</a></li>
+                            <li><a class="dropdown-item" href="thanh-vien/nguyen-trong-tuan.html">Nguyễn Trọng Tuấn</a>
+                            </li>
+                            <li><a class="dropdown-item" href="thanh-vien/nguyen-hoang-lam.html">Nguyễn Hoàng Lâm</a>
+                            </li>
+                            <li><a class="dropdown-item" href="thanh-vien/nguyen-minh-quang.html">Nguyễn Minh Quang</a>
+                            </li>
                         </ul>
                     </li>
-                    <li class="menu-item">
-                        <a href="bai-tap-lon/">Bài tập lớn</a>
+                    <li>
+                        <a class="nav-link" href="#">Bài tập lớn</a>
                     </li>
-                    <li class="menu-item">
-                        <a href="san-pham/">Sản phẩm</a>
+                    <li>
+                        <a class="nav-link" href="#">Sản phẩm</a>
                     </li>
                 </ul>
-            </nav>
-        </header>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" placeholder="Search" type="search" aria-label="Seach">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-        <main>
-            <aside>
-                <p>Thanh lề</p>
-            </aside>
-            <article class="anh-va-lien-he">
-                <img class="anh-dai-dien" src="images/quoc-tuan.png" alt="Ảnh của Quốc Tuấn">
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-fluid" src="images/quoc-tuan.png" alt="Ảnh của Quốc Tuấn">
                 <h2>Đào Quốc Tuấn</h2>
                 <h3>CTTN-Khoa học máy tính K66</h3>
                 <p>Email: tuansinhnam2003@gmail.com</p>
-            </article>
-            <article class="gioi-thieu">
+            </div>
+            <div class="col-md-8">
                 <h2>Giới thiệu</h2>
-                <p>Đào Quốc Tuấn được biết đến như là một học sinh ngoan.</p>
-            </article>
-        </main>
-
-        <footer>
-            <p>Contact: tuansinhnam2003@gmail.com</p>
-        </footer>
-    </div>
+                <p>Tôi đang tồn tại với câu hỏi "Tôi đến thế giới này để làm gì?" cứ văng vẳng trong đầu. Tôi không biết
+                    nữa nhưng tôi tin ở hiền gặp lành.
+                    Câu quote ưa thích: <br>
+                    <quote>"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and
+                        most of all, love of what you are doing or learning to do." <cite>— Pele, Brazilian soccer
+                            player</cite></quote>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid bg-dark">
+        <!-- <div class="row"> -->
+        <div class="text-light d-flex justify-content-center align-items-center" style="height: 200px;">
+            Contact: tuansinhnam2003@gmail.com
+        </div>
+        <!-- </div> -->
+    </footer>
 
 </body>
 
